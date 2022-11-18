@@ -42,6 +42,7 @@
     -o-border-radius: 8px;
 }
 .cartText{
+    margin-right: 5px;
     color: #fff;
     font-size: 18px;
 }
