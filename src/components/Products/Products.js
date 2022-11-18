@@ -13,8 +13,11 @@ const Products = ({products}) => {
             <div className="cardFooter">
                 <div className="price">${price}</div>
                 <div className="cartDetail">
-                    <span className='cartText'>Add To Cart</span>
-                     <FontAwesomeIcon icon={faShoppingCart} color='white' size='lg'></FontAwesomeIcon> </div>
+                   <button>
+                   <span className='cartText'>Add To Cart</span>
+                     <FontAwesomeIcon icon={faShoppingCart} color='white' size='lg'></FontAwesomeIcon>
+                   </button>
+                </div>
             </div>
            </div>
         </div>

@@ -45,3 +45,8 @@
     color: #fff;
     font-size: 18px;
 }
+.card button{
+    background : none;
+    cursor: pointer;
+    outline: none;
+}
