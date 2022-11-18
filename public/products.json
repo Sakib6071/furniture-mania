@@ -13,7 +13,7 @@
   },
     {
         "id": "3",
-        "name": "Wooden Table with Drawer",
+        "name": "Wooden Table",
         "price": 420,
         "img": "https://images.pexels.com/photos/11112745/pexels-photo-11112745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
@@ -37,9 +37,9 @@
   },
     {
         "id": "7",
-        "name": "https://images.pexels.com/photos/11112731/pexels-photo-11112731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "name": "Sofa",
         "price": 420,
-        "img": "Sofa"
+        "img": "https://images.pexels.com/photos/11112731/pexels-photo-11112731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
     {
         "id": "8",
