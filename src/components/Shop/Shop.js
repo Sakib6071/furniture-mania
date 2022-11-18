@@ -3,14 +3,21 @@ import Products from '../Products/Products';
 import Cart from '../Cart/Cart'
 import './Shop.css'
 const Shop = () => {
+    /* product setting state */
     const [products,setProducts]=useState([])
+
+    /* cart updated state */
     const [cart,setCart]=useState([])
+
+    /* products data fetch */
     useEffect(()=>{
         fetch('products.json')
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[])
 
+
+    /* add to cart button handle (lifting up) */
     const handleAddToCart = (selectedProduct) => {
         const exist = cart.find(product=>product.id===selectedProduct.id)
         if(!exist){
@@ -29,9 +36,14 @@ const Shop = () => {
         
     }
 
+
+    /* choose again button handle */
     const handleChooseAgain = () =>{
         setCart([])
     }
+
+
+    /* choose one button handle */
     const handleChooseOne = () =>{
         if(cart.length != 0){
             const len = cart.length;

@@ -6,6 +6,7 @@ import Shop from './components/Shop/Shop';
 function App() {
   return (
     <div>
+      {/* components add */}
       <Header></Header>
       <Shop></Shop>
       <Qna></Qna>

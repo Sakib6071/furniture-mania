@@ -2,7 +2,6 @@ import React from 'react';
 import './Cartproduct.css'
 import img from '../../img/trash.svg'
 const Cartproduct = ({item}) => {
-
     
     return (
         <div className='container'>
