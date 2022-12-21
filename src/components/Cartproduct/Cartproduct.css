@@ -27,3 +27,7 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+button{
+   background: none;
+   cursor: pointer;
+}

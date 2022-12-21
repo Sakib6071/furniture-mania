@@ -17,6 +17,7 @@ const Shop = () => {
     },[])
 
 
+
     /* add to cart button handle (lifting up) */
     const handleAddToCart = (selectedProduct) => {
         const exist = cart.find(product=>product.id===selectedProduct.id)
@@ -43,6 +44,7 @@ const Shop = () => {
     }
 
 
+
     /* choose one button handle */
     const handleChooseOne = () =>{
         if(cart.length != 0){
@@ -56,6 +58,21 @@ const Shop = () => {
         }
     }
 
+
+
+    const removeSpecificItem = (id) => {
+        // let newCart = cart;
+        const exist = cart.filter(product=>product.id!=id)
+        // const finding = cart.find(product=>product===exist)
+        // const indexNumber = cart.indexOf(finding)
+        // newCart.splice(indexNumber,1)
+        setCart(exist)
+        
+    }
+
+    
+    
+
     
     return (
         <div className='shop'>
@@ -68,7 +85,7 @@ const Shop = () => {
             
            </div>
            <div className="cart">
-            <Cart  cart={cart} handleChooseAgain={handleChooseAgain} handleChooseOne={handleChooseOne}></Cart>
+            <Cart  cart={cart} handleChooseAgain={handleChooseAgain} handleChooseOne={handleChooseOne} removeSpecificItem={removeSpecificItem}></Cart>
             </div>
         </div>
     );
